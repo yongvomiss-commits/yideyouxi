@@ -1,18 +1,34 @@
 # Fighting Game
 
-This is a simple 2D fighting game created with Phaser.js. It includes a main menu, game scene, and result scene.
+这是一个基于 **HTML + Phaser.js** 的网页格斗小游戏基础框架，可直接部署在 GitHub Pages。
 
-## Features:
-- Main Menu with play button
-- Simple fight scene with player and enemy
-- Basic movement controls
-- Local storage for saving data
+## 当前功能
 
-## Setup:
-1. Clone the repository
-2. Open `index.html` in your browser
-3. Enjoy the game!
+- 主菜单支持两种模式：
+  - 单人打电脑
+  - 双人同屏对战
+- 单人模式基础 AI：
+  - 电脑会靠近玩家
+  - 距离足够近会发动攻击
+- HUD：
+  - 双方血条
+  - 倒计时（60 秒）
+- 操作方式：
+  - 玩家1：`A / D` 移动，`J` 攻击
+  - 玩家2（双人模式）：`← / →` 移动，`1` 攻击
+- 手机端虚拟按钮：
+  - 玩家1 左 / 右 / 攻击
+- 结算页：
+  - 显示胜者（或平局）
+  - 支持再来一局/返回主菜单
 
-## Technology:
-- Phaser.js
+## 运行方式
+
+1. 克隆仓库
+2. 直接打开 `index.html`，或用任意静态服务器启动目录
+3. 进入菜单后选择模式开始游戏
+
+## 技术栈
+
+- Phaser.js 3.55.2
 - JavaScript (ES6)
